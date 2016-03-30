@@ -1,0 +1,16 @@
+node_modules
+jspm_packages
+bower_components
+.idea
+.DS_STORE
+/dist
+doc
+coverage
+test
+build/reports
+test/e2e/dist
+
+protractor.conf.js
+wallaby.js
+karma.conf.js
+aurelia.protractor.js
