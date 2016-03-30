@@ -28,7 +28,7 @@ gulp.task('build-system', function() {
 // copies changed html files to the output directory
 gulp.task('build-html', function() {
   return gulp.src(paths.html)
-    .pipe(changed(paths.output, {extension: '.html'}))
+    // .pipe(changed(paths.output, {extension: '.html'}))
     .pipe(gulp.dest(paths.output));
 });
 
@@ -51,7 +51,7 @@ gulp.task('build-styles', function() {
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(sourcemaps.write())
-    // .pipe(gulp.dest(paths.output))
+    .pipe(gulp.dest(paths.output + 'styles'))
     .pipe(gulp.dest('styles'))
     .pipe(browserSync.stream());
 });
