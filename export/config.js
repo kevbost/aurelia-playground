@@ -198,7 +198,28 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2"
     }
   },
+  depCache: {
+    "github:twbs/bootstrap@3.3.6.js": [
+      "github:twbs/bootstrap@3.3.6/js/bootstrap"
+    ],
+    "github:twbs/bootstrap@3.3.6/js/bootstrap.js": [
+      "jquery"
+    ],
+    "github:components/jquery@2.2.1.js": [
+      "github:components/jquery@2.2.1/jquery"
+    ],
+    "main.js": [
+      "bootstrap",
+      "jquery"
+    ]
+  },
   bundles: {
+    "vendor-plugins.js": [
+      "github:components/jquery@2.2.1.js",
+      "github:components/jquery@2.2.1/jquery.js",
+      "github:twbs/bootstrap@3.3.6.js",
+      "github:twbs/bootstrap@3.3.6/js/bootstrap.js"
+    ],
     "app-build.js": [
       "app.html!github:systemjs/plugin-text@0.0.3.js",
       "app.js",
@@ -207,14 +228,8 @@ System.config({
       "index.html!github:systemjs/plugin-text@0.0.3.js",
       "main.js"
     ],
-    "vendor-plugins.js": [
-      "github:components/jquery@2.2.1.js",
-      "github:components/jquery@2.2.1/jquery.js",
-      "github:twbs/bootstrap@3.3.6.js",
-      "github:twbs/bootstrap@3.3.6/css/bootstrap.css!github:systemjs/plugin-text@0.0.3.js",
-      "github:twbs/bootstrap@3.3.6/js/bootstrap.js"
-    ],
     "aurelia.js": [
+      "github:twbs/bootstrap@3.3.6/css/bootstrap.css!github:systemjs/plugin-text@0.0.3.js",
       "npm:aurelia-animator-css@1.0.0-beta.1.2.0.js",
       "npm:aurelia-animator-css@1.0.0-beta.1.2.0/aurelia-animator-css.js",
       "npm:aurelia-binding@1.0.0-beta.1.3.0.js",
@@ -297,21 +312,6 @@ System.config({
       "npm:aurelia-templating-router@1.0.0-beta.1.2.0/router-view.js",
       "npm:aurelia-templating@1.0.0-beta.1.2.0.js",
       "npm:aurelia-templating@1.0.0-beta.1.2.0/aurelia-templating.js"
-    ]
-  },
-  depCache: {
-    "main.js": [
-      "bootstrap",
-      "jquery"
-    ],
-    "github:twbs/bootstrap@3.3.6.js": [
-      "github:twbs/bootstrap@3.3.6/js/bootstrap"
-    ],
-    "github:twbs/bootstrap@3.3.6/js/bootstrap.js": [
-      "jquery"
-    ],
-    "github:components/jquery@2.2.1.js": [
-      "github:components/jquery@2.2.1/jquery"
     ]
   }
 });

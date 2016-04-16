@@ -16,8 +16,7 @@ module.exports = {
     "dist/vendor-plugins": {
       "includes": [
         "jquery",
-        "bootstrap",
-        "bootstrap/css/bootstrap.css!text"
+        "bootstrap"
       ],
       "options": {
         "inject": true,
@@ -40,9 +39,7 @@ module.exports = {
         "aurelia-loader-default",
         "aurelia-history-browser",
         "aurelia-logging-console",
-        // "jquery",
-        // "bootstrap",
-        // "bootstrap/css/bootstrap.css!text"
+        "bootstrap/css/bootstrap.css!text"
       ],
       "options": {
         "inject": true,
