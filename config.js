@@ -28,6 +28,7 @@ System.config({
     "aurelia-templating-router": "npm:aurelia-templating-router@1.0.0-beta.1.2.0",
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
+    "jquery": "github:components/jquery@2.2.1",
     "bootstrap": "github:twbs/bootstrap@3.3.6",
     "core-js": "npm:core-js@1.2.6",
     "fetch": "github:github/fetch@0.11.0",
@@ -206,12 +207,14 @@ System.config({
       "index.html!github:systemjs/plugin-text@0.0.3.js",
       "main.js"
     ],
-    "aurelia.js": [
+    "vendor-plugins.js": [
       "github:components/jquery@2.2.1.js",
       "github:components/jquery@2.2.1/jquery.js",
       "github:twbs/bootstrap@3.3.6.js",
       "github:twbs/bootstrap@3.3.6/css/bootstrap.css!github:systemjs/plugin-text@0.0.3.js",
-      "github:twbs/bootstrap@3.3.6/js/bootstrap.js",
+      "github:twbs/bootstrap@3.3.6/js/bootstrap.js"
+    ],
+    "aurelia.js": [
       "npm:aurelia-animator-css@1.0.0-beta.1.2.0.js",
       "npm:aurelia-animator-css@1.0.0-beta.1.2.0/aurelia-animator-css.js",
       "npm:aurelia-binding@1.0.0-beta.1.3.0.js",
@@ -297,8 +300,18 @@ System.config({
     ]
   },
   depCache: {
+    "github:twbs/bootstrap@3.3.6.js": [
+      "github:twbs/bootstrap@3.3.6/js/bootstrap"
+    ],
+    "github:twbs/bootstrap@3.3.6/js/bootstrap.js": [
+      "jquery"
+    ],
+    "github:components/jquery@2.2.1.js": [
+      "github:components/jquery@2.2.1/jquery"
+    ],
     "main.js": [
-      "bootstrap"
+      "bootstrap",
+      "jquery"
     ]
   }
 });
