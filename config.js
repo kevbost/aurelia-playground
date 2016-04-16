@@ -226,7 +226,8 @@ System.config({
       "child-router.html!github:systemjs/plugin-text@0.0.3.js",
       "child-router.js",
       "index.html!github:systemjs/plugin-text@0.0.3.js",
-      "main.js"
+      "main.js",
+      "nav-bar.html!github:systemjs/plugin-text@0.0.3.js"
     ],
     "aurelia.js": [
       "github:systemjs/plugin-text@0.0.3.js",
