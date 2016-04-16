@@ -229,6 +229,7 @@ System.config({
       "github:twbs/bootstrap@3.3.6/js/bootstrap.js"
     ],
     "app-build.js": [
+      "_components/nav-bar.html!github:systemjs/plugin-text@0.0.3.js",
       "app.html!github:systemjs/plugin-text@0.0.3.js",
       "app.js",
       "child-router.html!github:systemjs/plugin-text@0.0.3.js",
@@ -240,7 +241,6 @@ System.config({
       "json_data/json_data.html!github:systemjs/plugin-text@0.0.3.js",
       "json_data/json_data.js",
       "main.js",
-      "nav-bar.html!github:systemjs/plugin-text@0.0.3.js",
       "styles/main.css!github:systemjs/plugin-text@0.0.3.js",
       "welcome/welcome.html!github:systemjs/plugin-text@0.0.3.js",
       "welcome/welcome.js"
