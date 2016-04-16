@@ -208,6 +208,14 @@ System.config({
     "github:components/jquery@2.2.1.js": [
       "github:components/jquery@2.2.1/jquery"
     ],
+    "github_users/blur-image.js": [
+      "aurelia-framework"
+    ],
+    "github_users/users.js": [
+      "aurelia-framework",
+      "aurelia-fetch-client",
+      "fetch"
+    ],
     "main.js": [
       "bootstrap",
       "jquery"
@@ -225,9 +233,17 @@ System.config({
       "app.js",
       "child-router.html!github:systemjs/plugin-text@0.0.3.js",
       "child-router.js",
+      "github_users/blur-image.js",
+      "github_users/users.html!github:systemjs/plugin-text@0.0.3.js",
+      "github_users/users.js",
       "index.html!github:systemjs/plugin-text@0.0.3.js",
+      "json_data/json_data.html!github:systemjs/plugin-text@0.0.3.js",
+      "json_data/json_data.js",
       "main.js",
-      "nav-bar.html!github:systemjs/plugin-text@0.0.3.js"
+      "nav-bar.html!github:systemjs/plugin-text@0.0.3.js",
+      "styles/main.css!github:systemjs/plugin-text@0.0.3.js",
+      "welcome/welcome.html!github:systemjs/plugin-text@0.0.3.js",
+      "welcome/welcome.js"
     ],
     "aurelia.js": [
       "github:systemjs/plugin-text@0.0.3.js",
