@@ -13,6 +13,19 @@ module.exports = {
         "rev": false
       }
     },
+    "dist/vendor-plugins": {
+      "includes": [
+        "jquery",
+        "bootstrap",
+        "bootstrap/css/bootstrap.css!text"
+      ],
+      "options": {
+        "inject": true,
+        "minify": false,
+        "depCache": true,
+        "rev": false
+      }
+    },
     "dist/aurelia": {
       "includes": [
         "aurelia-framework",
@@ -27,8 +40,9 @@ module.exports = {
         "aurelia-loader-default",
         "aurelia-history-browser",
         "aurelia-logging-console",
-        "bootstrap",
-        "bootstrap/css/bootstrap.css!text"
+        // "jquery",
+        // "bootstrap",
+        // "bootstrap/css/bootstrap.css!text"
       ],
       "options": {
         "inject": true,

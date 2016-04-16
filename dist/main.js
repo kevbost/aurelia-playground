@@ -1,8 +1,11 @@
 'use strict';
 
-System.register(['bootstrap'], function (_export, _context) {
+System.register(['bootstrap', 'jquery'], function (_export, _context) {
+  var $;
   return {
-    setters: [function (_bootstrap) {}],
+    setters: [function (_bootstrap) {}, function (_jquery) {
+      $ = _jquery.default;
+    }],
     execute: function () {
       function configure(aurelia) {
         aurelia.use.standardConfiguration();
@@ -17,4 +20,4 @@ System.register(['bootstrap'], function (_export, _context) {
     }
   };
 });
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBRU8sZUFBUyxTQUFULENBQW1CLE9BQW5CLEVBQTRCO0FBQ2pDLGdCQUFRLEdBQVIsQ0FDRyxxQkFESCxHQURpQzs7O0FBWWpDLGdCQUFRLEtBQVIsR0FBZ0IsSUFBaEIsQ0FBcUI7aUJBQU0sUUFBUSxPQUFSO1NBQU4sQ0FBckIsQ0FaaUM7T0FBNUIiLCJmaWxlIjoibWFpbi5qcyIsInNvdXJjZVJvb3QiOiIvc3JjIn0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQ087OztBQUVBLGVBQVMsU0FBVCxDQUFtQixPQUFuQixFQUE0QjtBQUNqQyxnQkFBUSxHQUFSLENBQ0cscUJBREgsR0FEaUM7OztBQVlqQyxnQkFBUSxLQUFSLEdBQWdCLElBQWhCLENBQXFCO2lCQUFNLFFBQVEsT0FBUjtTQUFOLENBQXJCLENBWmlDO09BQTVCIiwiZmlsZSI6Im1haW4uanMiLCJzb3VyY2VSb290IjoiL3NyYyJ9

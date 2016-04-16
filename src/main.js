@@ -1,4 +1,5 @@
 import 'bootstrap';
+import $ from 'jquery';
 
 export function configure(aurelia) {
   aurelia.use

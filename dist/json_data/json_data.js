@@ -1,7 +1,7 @@
 'use strict';
 
-System.register(['jquery'], function (_export, _context) {
-    var $, json_data;
+System.register([], function (_export, _context) {
+    var json_data;
 
     function _classCallCheck(instance, Constructor) {
         if (!(instance instanceof Constructor)) {
@@ -10,9 +10,7 @@ System.register(['jquery'], function (_export, _context) {
     }
 
     return {
-        setters: [function (_jquery) {
-            $ = _jquery.default;
-        }],
+        setters: [],
         execute: function () {
             _export('json_data', json_data = function () {
                 function json_data() {
@@ -25,6 +23,7 @@ System.register(['jquery'], function (_export, _context) {
 
                 json_data.prototype.activate = function activate() {
                     console.log($('h2'));
+                    $('h2');
                 };
 
                 return json_data;
@@ -34,4 +33,4 @@ System.register(['jquery'], function (_export, _context) {
         }
     };
 });
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImpzb25fZGF0YS9qc29uX2RhdGEuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7OztBQUFPOzs7aUNBRU07QUFDVCx5QkFEUyxTQUNULEdBQWE7MENBREosV0FDSTs7QUFDVCx5QkFBSyxJQUFMLEdBQVksT0FBWixDQURTO0FBRVQseUJBQUssS0FBTCxHQUFhLGdDQUFiLENBRlM7QUFHVCx5QkFBSyxRQUFMLGlCQUE0QixLQUFLLElBQUwsVUFBYyxLQUFLLEtBQUwsQ0FIakM7aUJBQWI7O0FBRFMsb0NBT1QsK0JBQVc7QUFFUCw0QkFBUSxHQUFSLENBQVksRUFBRSxJQUFGLENBQVosRUFGTzs7O3VCQVBGIiwiZmlsZSI6Impzb25fZGF0YS9qc29uX2RhdGEuanMiLCJzb3VyY2VSb290IjoiL3NyYyJ9
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImpzb25fZGF0YS9qc29uX2RhdGEuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7aUNBQWE7QUFDVCx5QkFEUyxTQUNULEdBQWM7MENBREwsV0FDSzs7QUFDVix5QkFBSyxJQUFMLEdBQVksT0FBWixDQURVO0FBRVYseUJBQUssS0FBTCxHQUFhLGdDQUFiLENBRlU7QUFHVix5QkFBSyxRQUFMLGlCQUE0QixLQUFLLElBQUwsVUFBYyxLQUFLLEtBQUwsQ0FIaEM7aUJBQWQ7O0FBRFMsb0NBT1QsK0JBQVc7QUFFUCw0QkFBUSxHQUFSLENBQVksRUFBRSxJQUFGLENBQVosRUFGTztBQUdQLHNCQUFFLElBQUYsRUFITzs7O3VCQVBGIiwiZmlsZSI6Impzb25fZGF0YS9qc29uX2RhdGEuanMiLCJzb3VyY2VSb290IjoiL3NyYyJ9

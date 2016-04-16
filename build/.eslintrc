@@ -1,6 +1,9 @@
 {
   "rules": {
     "no-var": 0,
-    "no-console": 0
+    "no-console": 0,
+    "quotes": [
+      0, "single", "avoid-escape"    // http://eslint.org/docs/rules/quotes
+    ],
   }
 }
