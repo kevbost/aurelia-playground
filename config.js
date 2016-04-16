@@ -300,6 +300,10 @@ System.config({
     ]
   },
   depCache: {
+    "main.js": [
+      "bootstrap",
+      "jquery"
+    ],
     "github:twbs/bootstrap@3.3.6.js": [
       "github:twbs/bootstrap@3.3.6/js/bootstrap"
     ],
@@ -308,10 +312,6 @@ System.config({
     ],
     "github:components/jquery@2.2.1.js": [
       "github:components/jquery@2.2.1/jquery"
-    ],
-    "main.js": [
-      "bootstrap",
-      "jquery"
     ]
   }
 });
