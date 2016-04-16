@@ -28,11 +28,11 @@ System.config({
     "aurelia-templating-router": "npm:aurelia-templating-router@1.0.0-beta.1.2.0",
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
-    "jquery": "github:components/jquery@2.2.1",
     "bootstrap": "github:twbs/bootstrap@3.3.6",
     "core-js": "npm:core-js@1.2.6",
     "fetch": "github:github/fetch@0.11.0",
     "font-awesome": "npm:font-awesome@4.5.0",
+    "jquery": "github:components/jquery@2.2.1",
     "text": "github:systemjs/plugin-text@0.0.3",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
@@ -229,6 +229,8 @@ System.config({
       "main.js"
     ],
     "aurelia.js": [
+      "github:systemjs/plugin-text@0.0.3.js",
+      "github:systemjs/plugin-text@0.0.3/text.js",
       "github:twbs/bootstrap@3.3.6/css/bootstrap.css!github:systemjs/plugin-text@0.0.3.js",
       "npm:aurelia-animator-css@1.0.0-beta.1.2.0.js",
       "npm:aurelia-animator-css@1.0.0-beta.1.2.0/aurelia-animator-css.js",
