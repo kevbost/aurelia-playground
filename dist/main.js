@@ -5,7 +5,8 @@ System.register(['bootstrap'], function (_export, _context) {
     setters: [function (_bootstrap) {}],
     execute: function () {
       function configure(aurelia) {
-        aurelia.use.standardConfiguration().developmentLogging();
+        aurelia.use.standardConfiguration();
+
 
         aurelia.start().then(function () {
           return aurelia.setRoot();
@@ -16,4 +17,4 @@ System.register(['bootstrap'], function (_export, _context) {
     }
   };
 });
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBRU8sZUFBUyxTQUFULENBQW1CLE9BQW5CLEVBQTRCO0FBQ2pDLGdCQUFRLEdBQVIsQ0FDRyxxQkFESCxHQUVHLGtCQUZILEdBRGlDOztBQVlqQyxnQkFBUSxLQUFSLEdBQWdCLElBQWhCLENBQXFCO2lCQUFNLFFBQVEsT0FBUjtTQUFOLENBQXJCLENBWmlDO09BQTVCIiwiZmlsZSI6Im1haW4uanMiLCJzb3VyY2VSb290IjoiL3NyYyJ9
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBRU8sZUFBUyxTQUFULENBQW1CLE9BQW5CLEVBQTRCO0FBQ2pDLGdCQUFRLEdBQVIsQ0FDRyxxQkFESCxHQURpQzs7O0FBWWpDLGdCQUFRLEtBQVIsR0FBZ0IsSUFBaEIsQ0FBcUI7aUJBQU0sUUFBUSxPQUFSO1NBQU4sQ0FBckIsQ0FaaUM7T0FBNUIiLCJmaWxlIjoibWFpbi5qcyIsInNvdXJjZVJvb3QiOiIvc3JjIn0=

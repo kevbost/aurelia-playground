@@ -9,5 +9,6 @@ export class json_data {
 
     activate() {
         // $('.page-host').css('pointer-events', 'none')
+        console.log($('h2'));
     }
 }
