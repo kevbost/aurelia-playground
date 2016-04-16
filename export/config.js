@@ -201,18 +201,10 @@ System.config({
     "app-build.js": [
       "app.html!github:systemjs/plugin-text@0.0.3.js",
       "app.js",
-      "blur-image.js",
       "child-router.html!github:systemjs/plugin-text@0.0.3.js",
       "child-router.js",
       "index.html!github:systemjs/plugin-text@0.0.3.js",
-      "json_data.html!github:systemjs/plugin-text@0.0.3.js",
-      "json_data.js",
-      "main.js",
-      "nav-bar.html!github:systemjs/plugin-text@0.0.3.js",
-      "users.html!github:systemjs/plugin-text@0.0.3.js",
-      "users.js",
-      "welcome.html!github:systemjs/plugin-text@0.0.3.js",
-      "welcome.js"
+      "main.js"
     ],
     "aurelia.js": [
       "github:components/jquery@2.2.1.js",
@@ -305,19 +297,8 @@ System.config({
     ]
   },
   depCache: {
-    "blur-image.js": [
-      "aurelia-framework"
-    ],
-    "json_data.js": [
-      "jquery"
-    ],
     "main.js": [
       "bootstrap"
-    ],
-    "users.js": [
-      "aurelia-framework",
-      "aurelia-fetch-client",
-      "fetch"
     ]
   }
 });
