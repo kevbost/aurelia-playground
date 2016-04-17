@@ -1,5 +1,6 @@
 import 'bootstrap';
 import $ from 'jquery';
+import 'materialize';
 
 export function configure(aurelia) {
   aurelia.use

@@ -1,3 +1,5 @@
+/* eslint quotes: ["error", "double"], curly: 2 */
+
 module.exports = {
   "bundles": {
     "dist/app-build": {
@@ -16,7 +18,8 @@ module.exports = {
     "dist/vendor-plugins": {
       "includes": [
         "jquery",
-        "bootstrap"
+        "bootstrap",
+        "materialize"
       ],
       "options": {
         "inject": true,
@@ -40,7 +43,8 @@ module.exports = {
         "aurelia-history-browser",
         "aurelia-logging-console",
         "text",
-        "bootstrap/css/bootstrap.css!text"
+        "bootstrap/css/bootstrap.css!text",
+        "materialize/css/materialize.css!text"
       ],
       "options": {
         "inject": true,
