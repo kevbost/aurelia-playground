@@ -31,6 +31,7 @@ System.config({
     "bootstrap": "github:twbs/bootstrap@3.3.6",
     "clean-css": "npm:clean-css@3.4.12",
     "core-js": "npm:core-js@1.2.6",
+    "css": "github:systemjs/plugin-css@0.1.20",
     "fetch": "github:github/fetch@0.11.0",
     "font-awesome": "npm:font-awesome@4.5.0",
     "jquery": "github:components/jquery@2.2.1",
@@ -335,7 +336,8 @@ System.config({
     ],
     "main.js": [
       "bootstrap",
-      "jquery"
+      "jquery",
+      "materialize"
     ]
   },
   bundles: {
@@ -366,6 +368,7 @@ System.config({
       "github:twbs/bootstrap@3.3.6/js/bootstrap.js"
     ],
     "aurelia.js": [
+      "github:Dogfalo/materialize@0.97.6/css/materialize.css!github:systemjs/plugin-text@0.0.3.js",
       "github:systemjs/plugin-text@0.0.3.js",
       "github:systemjs/plugin-text@0.0.3/text.js",
       "github:twbs/bootstrap@3.3.6/css/bootstrap.css!github:systemjs/plugin-text@0.0.3.js",
