@@ -6,7 +6,14 @@
 // MATERIALIZE OVRRIDES
 $roboto-font-path: "materialize-src/fonts/roboto/";
 
+$primary-color: color("grey", "darken-3");
+$secondary-color: color("teal", "lighten-1") !default;
+$success-color: color("green", "base") !default;
+$error-color: color("red", "base") !default;
+$link-color: color("light-blue", "darken-1") !default;
 
+$sidenav-font-color: color("grey", "lighten-3");
+$sidenav-bg-color: color("grey", "darken-3");
 
 // DEFAULT COLORS
 // -------------------------

@@ -4,15 +4,17 @@
   <section class="au-animate">
     <h2>${heading}</h2>
     <div class="row au-stagger">
-      <div class="col-sm-6 col-md-3 card-container au-animate" repeat.for="user of users">
-        <div class="card">
+      <div class="col s6 m4 card-container au-animate" repeat.for="user of users">
+        <div class="card blue-grey darken-1">
           <canvas class="header-bg" width="250" height="70" blur-image.bind="image"></canvas>
           <div class="avatar">
             <img src.bind="user.avatar_url" crossorigin ref="image"/>
           </div>
-          <div class="content">
-            <p class="name">${user.login}</p>
-            <p><a target="_blank" class="btn btn-default" href.bind="user.html_url">Contact</a></p>
+          <div class="card-content white-text">
+            <p class="card-title name">${user.login}</p>
+            <div class="card-action">
+              <a target="_blank" class="btn btn-default" href.bind="user.html_url">Contact</a>
+            </div>
           </div>
         </div>
       </div>

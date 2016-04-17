@@ -22,3 +22,18 @@
         }
     }
 }
+
+.side-nav {
+    li.active {
+        background-color: rgba(0, 0, 0, .3);
+    }
+
+    a:hover {
+        background-color: rgba(0, 0, 0, .3);
+    }
+
+    .card {
+        line-height: 24px;
+    }
+}
+

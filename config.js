@@ -320,12 +320,6 @@ System.config({
     "github:components/jquery@2.2.1.js": [
       "github:components/jquery@2.2.1/jquery"
     ],
-    "github:twbs/bootstrap@3.3.6.js": [
-      "github:twbs/bootstrap@3.3.6/js/bootstrap"
-    ],
-    "github:twbs/bootstrap@3.3.6/js/bootstrap.js": [
-      "jquery"
-    ],
     "github_users/blur-image.js": [
       "aurelia-framework"
     ],
@@ -335,7 +329,6 @@ System.config({
       "fetch"
     ],
     "main.js": [
-      "bootstrap",
       "jquery",
       "materialize"
     ]
@@ -363,15 +356,12 @@ System.config({
       "github:Dogfalo/materialize@0.97.6/css/materialize.css!github:systemjs/plugin-css@0.1.20.js",
       "github:Dogfalo/materialize@0.97.6/js/materialize.js",
       "github:components/jquery@2.2.1.js",
-      "github:components/jquery@2.2.1/jquery.js",
-      "github:twbs/bootstrap@3.3.6.js",
-      "github:twbs/bootstrap@3.3.6/js/bootstrap.js"
+      "github:components/jquery@2.2.1/jquery.js"
     ],
     "aurelia.js": [
       "github:Dogfalo/materialize@0.97.6/css/materialize.css!github:systemjs/plugin-text@0.0.3.js",
       "github:systemjs/plugin-text@0.0.3.js",
       "github:systemjs/plugin-text@0.0.3/text.js",
-      "github:twbs/bootstrap@3.3.6/css/bootstrap.css!github:systemjs/plugin-text@0.0.3.js",
       "npm:aurelia-animator-css@1.0.0-beta.1.2.0.js",
       "npm:aurelia-animator-css@1.0.0-beta.1.2.0/aurelia-animator-css.js",
       "npm:aurelia-binding@1.0.0-beta.1.3.0.js",

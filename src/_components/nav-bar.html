@@ -1,5 +1,5 @@
 <template bindable="router">
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<!--   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse">
         <span class="sr-only">Toggle Navigation</span>
@@ -26,5 +26,35 @@
         </li>
       </ul>
     </div>
+  </nav> -->
+
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">KBAURELIA</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse right">
+        <i class="fa fa-bars"></i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}">
+          <a href.bind="row.href">${row.title}</a>
+        </li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <div class="row">
+          <div class="col s12">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">Card Title</span>
+                <p>Welcome to my Aurelia playground! Visit my main website at <a class="btn" href="http://kevbost.github.io">kevbost.github.io</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}">
+          <a href.bind="row.href">${row.title}</a>
+      </ul>
+    </div>
   </nav>
+
 </template>

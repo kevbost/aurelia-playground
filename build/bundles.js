@@ -18,7 +18,6 @@ module.exports = {
     "dist/vendor-plugins": {
       "includes": [
         "jquery",
-        "bootstrap",
         "materialize"
       ],
       "options": {
@@ -43,7 +42,6 @@ module.exports = {
         "aurelia-history-browser",
         "aurelia-logging-console",
         "text",
-        "bootstrap/css/bootstrap.css!text",
         "materialize/css/materialize.css!text"
       ],
       "options": {
