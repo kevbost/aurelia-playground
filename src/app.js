@@ -31,6 +31,13 @@ export class App {
                 moduleId: 'json_data/json_data',
                 nav: true,
                 title: 'JSON Data'
+            },
+            {
+                route: 'sdc01',
+                name: 'sdc01',
+                moduleId: 'sdc/sdc01',
+                nav: false,
+                title: 'sdc01'
             }
         ]);
 
@@ -43,5 +50,6 @@ export class App {
             edge: 'right', // Choose the horizontal origin
             closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
         });
+        Waves.displayEffect();
     }
 }

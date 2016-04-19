@@ -37,3 +37,29 @@
     }
 }
 
+// .collection {
+    .card-panel {
+        &.active {
+            background-color: $secondary-color !important;
+            p {
+                color: white;
+            }
+        }
+        &.shipment-info {
+            // padding-left: 10px;
+            p {
+                margin: 0;
+            }
+        }
+        &.shipment-fields {
+            padding-top: 40px;
+        }
+        &.waves-effect {
+            display: block;
+        }
+    }
+// }
+
+.input-field label {
+    // left: 0;
+}

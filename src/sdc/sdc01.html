@@ -1,0 +1,81 @@
+<template>
+    <section>
+    <h2>sdc01</h2>
+    <p>${hello}</p>
+    <div class="row">
+
+        <div class="col s5 m3">
+            <div class="card-panel shipment-info waves-effect waves-light" repeat.for="shipment of shipments" click.trigger="updateValues(shipment)">
+                <p class="">
+                    Carrier: ${shipment.carrier}
+                </p>
+                <p class="">
+                    Shipment#: ${shipment.shipment_number}
+                </p>
+                <p class="">
+                    Container#: ${shipment.container_number}
+                </p>
+            </div>
+        </div>
+
+        <div class="col s7 m9">
+            <div class="row">
+            <div class="card-panel shipment-fields col s12 m6">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <select>
+                            <option value="" disabled selected>Driver</option>
+                            <option value="1">Aaron A</option>
+                            <option value="2">Brian B</option>
+                            <option value="3">Chuck C</option>
+                        </select>
+                        <label>Select Driver</label>
+                    </div>
+                    <div class="input-field col s8">
+                        <label for="dlnum">DL #</label>
+                        <input type="text" class="validate" id="dlnum">
+                    </div>
+                    <div class="input-field col s4">
+                        <select>
+                            <option value="" disabled selected>State</option>
+                            <option value="1">SC</option>
+                            <option value="2">NC</option>
+                            <option value="3">ETC</option>
+                        </select>
+                        <label>State</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <label for="fn">First Name</label>
+                        <input type="text" class="validate" id="fn">
+                    </div>
+                    <div class="input-field col s6">
+                        <label for="ln">Last Name</label>
+                        <input type="text" class="validate" id="ln">
+                    </div>
+                </div>
+            </div>
+            <div class="card-panel shipment-fields col s12 m6">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="carrier">Carrier</label>
+                        <input type="text" value.bind="current_carrier" class="validate" id="carrier">
+                    </div>
+                    <div class="input-field col s12">
+                        <label for="shipment">Shipment #</label>
+                        <input type="text" value.bind="current_shipment" class="validate" id="shipment">
+                    </div>
+                    <div class="input-field col s12">
+                        <label for="container">Container #</label>
+                        <input type="text" value.bind="current_shipment" class="validate" id="container">
+                    </div>
+                    <button type="submit" class="waves-effect waves-light btn">Submit</button>
+
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+    </section>
+</template>
